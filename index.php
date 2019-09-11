@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="style.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-	<script dafer src="js/main.js"></script>
-	<title>Const</title>
-</head>
-<body>
-	
-</body>
-</html>
-<?php 
-
-### Constructor_EXCEL start
+<?php
 
 if(isset($_POST['exp_all'])) {
 	$tmp_id = $_POST['temp_excel']; 
@@ -30,7 +12,6 @@ if(isset($_POST['exp_all'])) {
 	echo "<a  href='export/".$filename.".xlsx' target='_blank' style='color: #ff0000;'>Download</a>";
 }
 
-
 $tmp_type = '0';
 // порядок в масивах тайтлах дожен совпадать с порядком в массиве данных
 $argWidth = [	30,	30,	10,	25,	25,	25,	30, 25, 25,	25,	25,	25,	25,	25,	35, 20, 20, 45, 15, 30, 30, 30, 30];
@@ -42,7 +23,19 @@ echo '</div>';
 echo '<div id="excel_wrap" style="display: none; width: 100%; max-width: 700px"></div>';
 ?>
 
-<button class="reviews-action__btn" data-fancybox="g_constructor_excel" data-src="#const_wrap">КОНСТРУКТОР</button>
-<button class="reviews-action__btn" data-fancybox="g_excel_wrap" data-src="#excel_wrap">EXCEL</button>
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script dafer src="js/main.js"></script>
+	<title>Const</title>
+</head>
+<body>
+	<button class="reviews-action__btn" data-fancybox="g_constructor_excel" data-src="#const_wrap">КОНСТРУКТОР</button>
+	<button class="reviews-action__btn" data-fancybox="g_excel_wrap" data-src="#excel_wrap">EXCEL</button>
+</body>
+</html>
