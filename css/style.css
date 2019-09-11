@@ -1,0 +1,119 @@
+
+/* Конструктор EXCEL */
+
+.con_excel_title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+#const_wrap {
+  padding: 30px 20px 45px;
+  min-height: 370px;
+  font: 1.7rem/1.15 "GothamPro";
+}
+.picker li {
+  max-height: 150px;
+}
+#const_wrap select {
+  font-size: 14px;
+  max-height: 250px;
+}
+.const_buttons {
+  margin-top: 25px;
+}
+.const_buttons button{
+  font-size: 14px;
+  font-weight: 700;
+  width: 100% !important;
+  margin-bottom: 8px;
+  padding-right: 5px;
+}
+#const_wrap .picker {
+  margin-top: 0;
+}
+#const_wrap .tmp_title input{
+  width: 100%;
+  background: #f4e7e2;
+  font: 1.4rem/1.15 "GothamPro";
+  border: none;
+  margin-top: 5px;
+  padding: 5px 15px;
+}
+#const_wrap .tmp_title {
+  width: 100%;
+}
+.select_tmp_excel .picker {
+  margin-top: 0;
+}
+.select_tmp_excel p {
+  margin-bottom: 1px;
+}
+.tabs__content {
+  display: none
+}
+.tabs__content.active-tab{
+  display: block
+}
+.tabs__list {
+  display: flex;
+  margin: 5px 10px 15px;
+  border-bottom: 1px solid #c7ac9e
+}
+.tabs__list-item {
+  padding: 5px 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: .3s;
+}
+.tabs__list-item.active-tab {
+  box-shadow: 0 0 0 1px #4a3933;
+}
+.tabs__list-item:hover {
+  background-color: #c7ac9e;
+}
+#excel_wrap .look-more__btn{
+  width: calc(100% - 10px);
+  margin: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+#excel_wrap .excel_link{
+  width: calc(100% - 10px);
+  margin: 5px;
+  background-color: transparent;
+  padding-bottom: 0;
+}
+#excel_wrap .look-more__btn:hover {
+  color: #f4e7e2;
+  background-color: #5d4a49;
+}
+.listTMP {
+  margin-top: 10px;
+}
+.letter-holder .letter {
+    animation-name: loadingF;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+}
+.letter-holder {
+  display: none;
+  justify-content: center;
+}
+.letter-holder-active {
+  display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex;
+}
+.l-1 {animation-delay: .48s;}
+.l-2 {animation-delay: .6s;}
+.l-3 {animation-delay: .72s;}
+.l-4 {animation-delay: .84s;}
+.l-5 {animation-delay: .96s;}
+.l-6 {animation-delay: 1.08s;}
+.l-7 {animation-delay: 1.2s;}
+@keyframes loadingF {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
